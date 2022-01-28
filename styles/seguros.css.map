@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAGK,AAAD,WAAI,CAAA;EACA,gBAAgB,EAHjB,OAAO;CAIT;;AACA,AAAD,aAAM,CAAA;EACF,KAAK,EANN,OAAO;CAOT;;AAEL,AAAA,YAAY,CAAA;EACR,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,UAAU,CAAA;EACN,UAAU,EAAE,IAAI;CACnB;;AACD,AAAA,KAAK,CAAA;EACD,aAAa,EAAC,IAAI;CACrB",
+    "sources": [
+        "seguros.scss"
+    ],
+    "names": [],
+    "file": "seguros.css"
+}

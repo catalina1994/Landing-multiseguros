@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+$cyan: #20a6ff;
+$helveticaRounded: 'HelveticaRounded LT Std Bd', sans-serif;
+$fontOpen: 'Open Sans', sans-serif;
+$gris: #868686;
+
+@font-face {
+    font-family: 'HelveticaRounded LT Std Bd';
+    src: url(/fonts/HelveticaRoundedLTStd-Bd.woff);
+}
+.breadCrumbBif {
+    display: none !important;
+}
+.banner {
+    background-color: $cyan;
+    height: 350px;
+    &__content {
+        height: 100%;
+        & > div {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & > p {
+                text-align: center;
+            }
+        }
+    }
+}
+.hola-banbif {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+.font-titulo {
+    font-family: $helveticaRounded;
+    color: #fff;
+    font-weight: 800;
+    font-size: 24px !important;
+    max-width: 400px;
+}
+.promoCuenta {
+    padding: 60px 0;
+    padding-bottom: 30px;
+    & > ol {
+        padding: 0 20px;
+        padding-left: 25px;
+    }
+}
+.titulo {
+    color: $cyan;
+    font-family: $helveticaRounded;
+    font-size: 21px !important;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    max-width: 600px;
+    font-weight: bold;
+}
+
+.parrafo {
+    color: $gris;
+    font-size: 14px;
+    font-family: $fontOpen;
+    max-width: 500px;
+    margin: 0 auto;
+    line-height: 1.3em;
+    & > li {
+        padding-bottom: 10px;
+        &:first-child {
+            margin-top: 10px;
+        }
+        & > strong > a {
+            color: $gris;
+            text-decoration: none;
+        }
+    }
+    & a {
+        color: $cyan;
+        text-decoration: transparent !important;
+        font-weight: 700;
+        transition: text-decoration linear 150ms;
+
+        &:hover {
+            text-decoration: underline !important;
+        }
+    }
+}
+.beneficiosGenial {
+    padding-bottom: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    &__item {
+        overflow: hidden;
+        max-width: 290px;
+        border-radius: 10px 10px 0 0;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        &__imagen {
+            height: 130px;
+            width: 100%;
+            background: radial-gradient(50% 50% at 50% 50%, #20A6FF 0%, #1B99F0 100%);
+            padding-right: 0px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            &--a {
+                background: radial-gradient(50% 50% at 50% 50%, #20A6FF 0%, #1B99F0 100%);
+            }
+            &--b {
+                background: radial-gradient(50% 50% at 50% 50%, #20A6FF 0%, #1B99F0 100%);
+            }
+            &--c {
+                background: linear-gradient(
+                    180deg,
+                    #20a6ff 0%,
+                    #0085ff 142.56%
+                );
+            }
+            & > img {
+                display: block;
+                height: 100%;
+                // max-height: 125px;
+            }
+        }
+        &__detalle {
+            height: 150px;
+            border: 1px solid #cacaca;
+            padding: 25px;
+            border-top: none;
+            & > p,
+            & span {
+                font-size: 16px !important;
+                font-family: $fontOpen !important;
+                font-weight: 600 !important;
+                color: $gris;
+                line-height: 1.3em !important;
+                text-align: center;
+            }
+            & > p:first-child {
+                margin-bottom: 10px;
+            }
+            & > p > a {
+                font-size: 14px !important;
+                font-weight: 700;
+                color: $cyan;
+                text-decoration: underline !important;
+                transition: text-decoration linear 150ms;
+                &:hover {
+                    text-decoration: transparent !important;
+                }
+                & > img {
+                    margin-left: 10px;
+                }
+            }
+        }
+        &__seg {
+            height: 250px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+
+            & > .parrafoDetalle {
+                font-size: 14px !important;
+                font-weight: 400;
+                text-align: left;
+            }
+        }
+    }
+}
+.tituloDetalle {
+    font-size: 16px !important;
+    font-family: $fontOpen;
+    font-weight: 700;
+    color: $gris;
+    line-height: 1.3em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.parrafoDetalle {
+    font-family: $fontOpen;
+    font-size: 14px !important;
+    font-weight: 400;
+    color: #868686;
+    & > a {
+        font-family: $fontOpen;
+        font-size: 14px;
+        font-weight: 600;
+        color: #868686;
+        text-decoration: underline !important;
+    }
+}
+.botonAction {
+    font-family: $fontOpen;
+    background-color: #ffb91d;
+    color: #fff !important;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px 20px;
+    border: 1px solid #ffb91d;
+    border-radius: 7px;
+    transition: all linear 150ms;
+    text-decoration: none !important;
+    &.btn-celeste{
+        background-color: $cyan;
+        border: 1px solid $cyan;
+    }
+}
+.botonAction:hover {
+    background-color: transparent;
+    color: #ffb91d !important;
+    &.btn-celeste{
+        color: $cyan !important;
+    }
+    
+}
+.vigencias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+    &__promo {
+        font-size: 16px !important;
+        text-align: center;
+        font-weight: 700;
+        font-family: $fontOpen;
+        color: $cyan;
+        margin-bottom: 10px;
+    }
+    & .parrafo {
+        text-align: center;
+    }
+    & .info {
+        margin-bottom: 40px;
+    }
+}
+.registrar {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+}
+.text-cyan {
+    color: $cyan !important;
+}
+@media (min-width: 1024px) {
+    .banner {
+        &__content {
+            & > div {
+                align-items: flex-start;
+            }
+        }
+    }
+    .font-titulo {
+        font-size: 32px !important;
+        text-align: left ;
+    }
+    .beneficiosGenial {
+        justify-content: space-between;
+        &__item {
+            margin: 0 10px;
+        }
+    }
+}

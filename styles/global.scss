@@ -1,0 +1,47 @@
+$cyan: #20a6ff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.centrado {
+    max-width: 938px;
+    width: 96%;
+    margin: 0 auto;
+    position: relative;
+    min-height: 0px;
+    overflow: hidden;
+}
+.celeste{
+    &-bg{
+        background-color:$cyan;
+    }
+    &-text{
+        color:$cyan;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.btn-full{
+    width: 100%;
+}
+
+.mx-auto{
+    margin-left: auto;
+    margin-right: auto
+   }
+.mb-1{
+    margin-bottom:10px;
+}
+.mb-2{
+    margin-bottom:20px;
+}
+
+
+.text-center{
+    text-align: center;
+}
